@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment2</title>
+        <link rel="stylesheet" href="Buttons.CSS" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+        rel="stylesheet"/>
+        <style>
+            .centdiv {
+                margin: auto;
+                width: 100%;
+                padding: 50%;
+            }
+
+            .light-container {
+                position: relative;
+                margin: 0 auto;
+                width: 10px;
+                height: 10px;
+            }
+
+            .light {
+                position: absolute;
+                bottom: 150px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: red;
+            }
+
+            .counter-left,
+            .counter-right {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 10px 20px;
+                font-size: 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+            }
+
+            .counter-left {
+                left: 19%;
+            }
+
+            .counter-right {
+                right: 19%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="centdiv"></div>
+
+        <div class="menu">
+            <div class="circle-container">
+                <ul>
+                    <div class="red">
+                        <ul><li class="circle"></li><ul>
+                    </div>
+                    <button class="start-button">START</button>
+                    <div class="blue">
+                        <ul><li class="circle"></li><ul>
+                    </div>
+                    <div class="green">
+                       <ul><li class="circle"></li><ul>
+                    </div>
+                    <div class="yellow">
+                       <ul> <li class="circle"></li><ul>
+                    </div>
+                    <div><button id="highScore" class="counter-left">00</button>
+                         <button id="currentScore" class="counter-right">00</button>
+                        </div>
+                        <div class="light-container">
+                            <div class="light"></div>
+                    </div>
+                    
+                    </div>
+
+                </ul>
+            </div>
+            
+        </div>
+        <script src="Buttons.js"></script>
+        <div>
+            
+        </div>
+    </body>
+</html>
